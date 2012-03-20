@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTypes", "GameTypes\GameTypes.csproj", "{EC63C4E3-C5B8-4EB1-90CD-2D2FC17801BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTypes_Tests", "GameTypes_Tests\GameTypes_Tests.csproj", "{CED56339-9D9E-4D98-A434-2E12EBB3E465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED56339-9D9E-4D98-A434-2E12EBB3E465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED56339-9D9E-4D98-A434-2E12EBB3E465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED56339-9D9E-4D98-A434-2E12EBB3E465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED56339-9D9E-4D98-A434-2E12EBB3E465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC63C4E3-C5B8-4EB1-90CD-2D2FC17801BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC63C4E3-C5B8-4EB1-90CD-2D2FC17801BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC63C4E3-C5B8-4EB1-90CD-2D2FC17801BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC63C4E3-C5B8-4EB1-90CD-2D2FC17801BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = GameTypes\GameTypes.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+Utility library with asserts, logging functionality, basic data types, etc that are used throughout our game, primarily to ease the interaction between our own libraries and Unity.
