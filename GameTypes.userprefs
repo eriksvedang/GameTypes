@@ -22,15 +22,7 @@
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True">
-          <Node name="GameTypes_Tests" expanded="True">
-            <Node name="GameTypes" expanded="True">
-              <Node name="tests" expanded="True">
-                <Node name="WorldCoordinateTests" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="ConnectionManagerPad">
         <State selected="True" />
