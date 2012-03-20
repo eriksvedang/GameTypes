@@ -4,15 +4,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="GameTypes" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="src" expanded="True" />
-          </Node>
-          <Node name="GameTypes_Tests" expanded="True">
-            <Node name="tests" expanded="True">
-              <Node name="WorldCoordinateTests.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="GameTypes" expanded="True" />
+          <Node name="GameTypes_Tests" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
