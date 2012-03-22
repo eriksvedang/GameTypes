@@ -1,11 +1,24 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameTypes_Tests/tests/BitCruncherTest.cs">
+    <Files>
+      <File FileName="GameTypes_Tests/tests/BitCruncherTest.cs" Line="20" Column="47" />
+      <File FileName="GameTypes_Tests/tests/GameTimeTests.cs" Line="1" Column="1" />
+      <File FileName="GameTypes_Tests/tests/GridMathTests.cs" Line="1" Column="1" />
+      <File FileName="GameTypes_Tests/tests/WorldCoordinateTests.cs" Line="1" Column="1" />
+      <File FileName="GameTypes_Tests/tests/IntPointTests.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="GameTypes" expanded="True" />
-          <Node name="GameTypes_Tests" expanded="True" />
+          <Node name="GameTypes" expanded="True">
+            <Node name="src" expanded="True" />
+          </Node>
+          <Node name="GameTypes_Tests" expanded="True">
+            <Node name="tests" expanded="True">
+              <Node name="BitCruncherTest.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">

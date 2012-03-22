@@ -3,7 +3,10 @@
 *.mdb
 *.pidb
 *.userprefs
-test-results
+*.json
+*.xml
+*.userprefs
 
+test-results
 Debug/
 Release/
