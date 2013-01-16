@@ -182,5 +182,18 @@ namespace GameTypes
         {
             get { return normalizedDayTime > 0.3f; }
         }
+
+		/// <summary>
+		/// Ignores the day! Only checks hours and minutes.
+		/// </summary>
+		public bool IsWithinMinuteBounds(GameTime startTime, GameTime endTime)
+		{
+			GameTime startTimeIgnoreDay = new GameTime(startTime.hours, startTime.minutes);
+			GameTime endTimeIgnoreDay = new GameTime(endTime.hours, endTime.minutes);
+			GameTime thisTimeIgnoreDay = new GameTime(this.hours, this.minutes);
+
+			return (startTimeIgnoreDay.totalSeconds <= thisTimeIgnoreDay.totalSeconds) &&
+				(thisTimeIgnoreDay.totalSeconds < endTimeIgnoreDay.totalSeconds);
+		}
     }
 }
