@@ -192,8 +192,15 @@ namespace GameTypes
 			GameTime endTimeIgnoreDay = new GameTime(endTime.hours, endTime.minutes);
 			GameTime thisTimeIgnoreDay = new GameTime(this.hours, this.minutes);
 
-			return (startTimeIgnoreDay.totalSeconds <= thisTimeIgnoreDay.totalSeconds) &&
-				(thisTimeIgnoreDay.totalSeconds < endTimeIgnoreDay.totalSeconds);
+			if(startTimeIgnoreDay < endTimeIgnoreDay) {
+				return (startTimeIgnoreDay.totalSeconds <= thisTimeIgnoreDay.totalSeconds) &&
+					(thisTimeIgnoreDay.totalSeconds < endTimeIgnoreDay.totalSeconds);
+			}
+			else {
+				// When the time span (start to end time) wraps over midnight
+				return (thisTimeIgnoreDay.totalSeconds <= startTimeIgnoreDay.totalSeconds) ||
+					(endTimeIgnoreDay.totalSeconds < thisTimeIgnoreDay.totalSeconds);
+			}
 		}
     }
 }
