@@ -200,7 +200,7 @@ namespace GameTypes
 				// When the timespan wraps over midnight
 				//Console.WriteLine("StartTime " + startTimeIgnoreDay.totalSeconds + " endTime " + endTimeIgnoreDay.totalSeconds + " thisTime " + thisTimeIgnoreDay.totalSeconds + " withinBounds " + withinBounds);
 				bool inFirstHalf = thisTimeIgnoreDay.totalSeconds <= endTimeIgnoreDay.totalSeconds;
-				bool inLastHalf = thisTimeIgnoreDay.totalSeconds > startTimeIgnoreDay.totalSeconds;
+				bool inLastHalf = thisTimeIgnoreDay.totalSeconds >= startTimeIgnoreDay.totalSeconds;
 				return inFirstHalf || inLastHalf;
 			}
 		}
