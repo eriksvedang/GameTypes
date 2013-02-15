@@ -35,6 +35,7 @@
     <Compile Include="tests\GridMathTests.cs" />
     <Compile Include="tests\IntPointTests.cs" />
     <Compile Include="tests\WorldCoordinateTests.cs" />
+    <Compile Include="tests\RandomizerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
