@@ -19,6 +19,12 @@ namespace GameTypes
 			}
 			return pMin + ((pMax - pMin) * (float)_random.NextDouble());
 		}
+
+		public static bool OneIn(int pX) {
+			return (GetValue(0, pX) < 1f);
+		}
+
+
 	}
 }
 
