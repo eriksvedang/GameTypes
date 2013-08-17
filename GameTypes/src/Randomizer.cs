@@ -14,7 +14,6 @@ namespace GameTypes
 #endif
 			if(_random == null) {
 				int seed = DateTime.Now.Millisecond * DateTime.Now.Second * DateTime.Now.Minute;
-				//Console.WriteLine("Seed: " + seed);
 				_random = new Random(seed);
 			}
 			return pMin + ((pMax - pMin) * (float)_random.NextDouble());
