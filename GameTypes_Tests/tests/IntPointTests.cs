@@ -30,6 +30,14 @@ namespace GameTypes.tests
 		}
 		
 		[Test]
+		public void RotateIntPoints() 
+		{
+			Assert.AreEqual(IntPoint.Up, IntPoint.Right.RotatedWithDegrees(-90.0f));
+			Assert.AreEqual(IntPoint.Left, IntPoint.Down.RotatedWithDegrees(90.0f));
+			Assert.AreEqual(IntPoint.Right, IntPoint.Left.RotatedWithDegrees(180));
+		}
+		
+		[Test]
 		public void SubtractIntPoints() 
 		{
 			IntPoint p1 = new IntPoint(0, 0);

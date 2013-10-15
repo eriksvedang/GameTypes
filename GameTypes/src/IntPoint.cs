@@ -117,6 +117,18 @@ namespace GameTypes
 			if(deg < 0) { deg += 360.0f; }
             return deg;
         }
+
+		public IntPoint RotatedWithDegrees (float pDegrees)
+		{
+			float otherWay = -pDegrees;
+			float radians = GridMath.DEGREES_TO_RADIANS * otherWay;
+			float oldAngle = (float)Math.Atan2(y, x);
+			float newAngle = oldAngle + radians;
+			
+			return new IntPoint(
+				(int) Math.Round(Math.Cos (newAngle)), 
+				(int) Math.Round(Math.Sin (newAngle)));
+		}
         
 		public static IntPoint Max
         {
