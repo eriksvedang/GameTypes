@@ -1,41 +1,6 @@
 ﻿<Properties GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameTypes/src/Randomizer.cs">
-    <Files>
-      <File FileName="GameTypes_Tests/tests/BitCruncherTest.cs" Line="21" Column="4" />
-      <File FileName="GameTypes_Tests/tests/GameTimeTests.cs" Line="1" Column="1" />
-      <File FileName="GameTypes_Tests/tests/GridMathTests.cs" Line="1" Column="1" />
-      <File FileName="GameTypes_Tests/tests/WorldCoordinateTests.cs" Line="1" Column="1" />
-      <File FileName="GameTypes_Tests/tests/IntPointTests.cs" Line="1" Column="1" />
-      <File FileName="GameTypes_Tests/tests/RandomizerTests.cs" Line="1" Column="1" />
-      <File FileName="GameTypes/src/Randomizer.cs" Line="13" Column="5" />
-      <File FileName="GameTypes/src/D.cs" Line="11" Column="3" />
-      <File FileName="GameTypes/src/GameTime.cs" Line="1" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="GameTypes" expanded="True">
-            <Node name="src" expanded="True">
-              <Node name="Randomizer.cs" selected="True" />
-            </Node>
-          </Node>
-          <Node name="GameTypes_Tests" expanded="True">
-            <Node name="tests" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
