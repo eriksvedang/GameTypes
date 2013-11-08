@@ -17,7 +17,7 @@ namespace GameTypes
     }
 	
     [Serializable]
-    public struct IntPoint : IPoint
+	public struct IntPoint : IPoint
     {
         public int x;
         public int y;
@@ -197,5 +197,6 @@ namespace GameTypes
         {
             x = pX; y = pY;
         }
+
     }
 }
