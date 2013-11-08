@@ -84,7 +84,7 @@ namespace GameTypes
 			minutes = pMinute;
 			D.Log("Turning forward time from " + prevTime + " to " + this.ToString());
 		}
-		
+
         public override string ToString()
         {
 			string hoursString = hours.ToString();
@@ -93,8 +93,17 @@ namespace GameTypes
 			if(minutesString.Length == 1) { minutesString = "0" + minutesString; }
 			string secondsString = Math.Floor(seconds).ToString();
 			if(secondsString.Length == 1) { secondsString = "0" + secondsString; }
-            return String.Format("Day {0}, {1}:{2}:{3}", days, hoursString, minutesString, secondsString);
+			return String.Format("Day {0}, {1}:{2}:{3}", days, hoursString, minutesString, secondsString);
         }
+
+		public string ToStringWithoutDayAndSeconds()
+		{
+			string hoursString = hours.ToString();
+			if(hoursString.Length == 1) { hoursString = "0" + hoursString; }
+			string minutesString = minutes.ToString();
+			if(minutesString.Length == 1) { minutesString = "0" + minutesString; }
+			return String.Format("{0}:{1}", hoursString, minutesString);
+		}
 
         public float normalizedDayTime
         {
