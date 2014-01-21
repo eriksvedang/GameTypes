@@ -78,6 +78,12 @@ namespace GameTypes
             }
         }
 
+		public static Direction Turn(Direction pDirection, int pDegrees) {
+			int degrees = (int)IntPoint.DirectionToIntPoint(pDirection).Degrees();
+			degrees -= pDegrees;	
+			return GridMath.DegreesToDirection((int)degrees);
+		}
+
         public Direction ToDirection()
         {
             if (Clamped() == IntPoint.Up ) { return Direction.UP; }
