@@ -80,7 +80,7 @@ namespace GameTypes
 
 		public static Direction Turn(Direction pDirection, int pDegrees) {
 			int degrees = (int)IntPoint.DirectionToIntPoint(pDirection).Degrees();
-			degrees -= pDegrees;	
+			degrees += pDegrees;	
 			return GridMath.DegreesToDirection((int)degrees);
 		}
 
@@ -140,52 +140,68 @@ namespace GameTypes
         {
             get { return new IntPoint(int.MaxValue, int.MaxValue); }
         }
-        public static IntPoint Min
+       
+		public static IntPoint Min
         {
             get { return new IntPoint(int.MinValue, int.MinValue); }
         }
-        public static IntPoint operator-( IntPoint pFirst, IntPoint pSecond )
+      
+		public static IntPoint operator-( IntPoint pFirst, IntPoint pSecond )
         {
             return new IntPoint(pFirst.x - pSecond.x, pFirst.y - pSecond.y);
         }
-        public static IntPoint operator+(IntPoint pFirst, IntPoint pSecond)
+       
+		public static IntPoint operator+(IntPoint pFirst, IntPoint pSecond)
         {
             return new IntPoint(pFirst.x + pSecond.x, pFirst.y + pSecond.y);
         }
-        public static IntPoint operator *(int pFirst, IntPoint pSecond)
+      
+		public static IntPoint operator *(int pFirst, IntPoint pSecond)
         {
             return pSecond * pFirst;
         }
-        public static IntPoint operator *(IntPoint pFirst, int pSecond)
+        
+		public static IntPoint operator *(IntPoint pFirst, int pSecond)
         {
             return new IntPoint(pFirst.x * pSecond, pFirst.y * pSecond);
         }
-        public static IntPoint operator /(IntPoint pFirst, int pSecond)
+       
+		public static IntPoint operator /(IntPoint pFirst, int pSecond)
         {
             return new IntPoint(pFirst.x / pSecond, pFirst.y / pSecond);
         }
-        public static bool operator ==(IntPoint pFirst, IntPoint pSecond)
+       
+		public static bool operator ==(IntPoint pFirst, IntPoint pSecond)
         {
             return (pFirst.x == pSecond.x && pFirst.y == pSecond.y);
         }
-        public static bool operator !=(IntPoint pFirst, IntPoint pSecond)
+       
+		public static bool operator !=(IntPoint pFirst, IntPoint pSecond)
         {
             return !(pFirst == pSecond);
         }
-        public override bool Equals(object obj)
+    
+		public override bool Equals(object obj)
         {
             if (!(obj is IntPoint))
                 return false;
             return (IntPoint)obj == this;
         }
-        public override int GetHashCode()
+       
+		public override int GetHashCode()
         {
             return BitCruncher.PackTwoShorts(x, y);
         }
-        public override string ToString()
+        
+		public override string ToString()
         {
             return "(" + x + "," + y + ")";
         }
+
+		public IntPoint scale(float amount)
+		{
+			return new IntPoint((int)(x * amount), (int)(y * amount));
+		}
 
         #region IPoint Members
 
