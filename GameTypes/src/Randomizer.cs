@@ -33,7 +33,7 @@ namespace GameTypes
 		}
 
 		public static bool OneIn(int pX) {
-			return (GetValue(0, pX) < 1f);
+			return (GetIntValue(0, pX) == 0);
 		}
 
 
