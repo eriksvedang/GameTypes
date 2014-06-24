@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace GameTypes
 {
@@ -36,7 +37,9 @@ namespace GameTypes
 			return (GetIntValue(0, pX) == 0);
 		}
 
-
+		public static T RandNth<T>(IList<T> pList) {
+			return pList [Randomizer.GetIntValue (0, pList.Count)];
+		}
 	}
 }
 
