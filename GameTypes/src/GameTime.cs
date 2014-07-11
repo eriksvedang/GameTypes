@@ -189,7 +189,7 @@ namespace GameTypes
 		}
         public bool isDaytime
         {
-			get { return hours >= 6 && hours <= 18; }
+			get { return hours >= 6 && hours < 18; }
         }
 
 		/// <summary>
